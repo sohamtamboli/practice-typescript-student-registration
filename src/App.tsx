@@ -1,5 +1,6 @@
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Box, Button, Grid, useColorMode } from "@chakra-ui/react";
+import StudentRegistration from "./components/StudentRegistration";
 
 interface IAppProps {}
 
@@ -12,6 +13,7 @@ function App<IAppProps>() {
 					{colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
 				</Button>
 			</Box>
+			<StudentRegistration />
 		</Grid>
 	);
 }
